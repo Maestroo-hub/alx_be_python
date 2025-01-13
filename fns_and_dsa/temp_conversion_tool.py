@@ -5,13 +5,22 @@ CELSIUS_OFFSET = 0
 
 
 def convert_to_celsius(fahrenheit):
+    """
+    Converts Fahrenheit to Celsius using the global conversion factor.
+    Formula: (F - 32) * 5/9
+    """
     return (fahrenheit - FAHRENHEIT_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 
 def convert_to_fahrenheit(celsius):
+    """
+    Converts Celsius to Fahrenheit using the global conversion factor.
+    Formula: (C * 9/5) + 32
+    """
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FAHRENHEIT_OFFSET
 
 
+# Main function to interact with the user
 def main():
     try:
         temperature = input("Enter the temperature to convert: ")
@@ -37,4 +46,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
