@@ -1,9 +1,4 @@
 import unittest
-
-class SimpleCalculator:
-    pass
-
-
 from test_simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
@@ -14,14 +9,11 @@ class TestSimpleCalculator(unittest.TestCase):
 
     def test_addition(self):
         """Test the addition method."""
-        self.assertEqual(self.calc.add(2, 3), 5)
-        self.assertEqual(self.calc.add(-1, 1), 0)
-        self.assertEqual(self.calc.add(2, -1), 1)
+        self.assertEqual(self.calc.add(2, 3), 5)        # Positive numbers
+        self.assertEqual(self.calc.add(-1, 1), 0)       # Negative and positive numbers
+        self.assertEqual(self.calc.add(0, 0), 0)        # Zero case
+        self.assertEqual(self.calc.add(-5, -3), -8)     # Negative numbers
 
     def test_subtraction(self):
         """Test the subtraction method."""
-        self.assertEqual(self.calc.subt(5, 3),2)
-        self.assertEqual(self.calc.subt(-1, 1), -2)
-        self.assertEqual(self.calc.subt(-1, -1), 0)
-
-        # Add more assertions to thoroughly test the add method.
+        self.assertE
