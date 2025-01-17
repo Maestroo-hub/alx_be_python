@@ -1,4 +1,9 @@
 import sys
+
+class safe_divide:
+    pass
+
+
 from robust_division_calculator import safe_divide
 
 def main():
