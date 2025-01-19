@@ -45,7 +45,7 @@ def main():
             print(f"{temp}°C is {converted_temp}°F")
 
     except ValueError as e:
-        print(e)
+        return(e)
 
 
 # Run the program
