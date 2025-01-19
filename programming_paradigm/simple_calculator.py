@@ -16,7 +16,7 @@ class SimpleCalculator:
         return a / b
 
 
-from simple_calculators import SimpleCalculator
+from simple_calculator import SimpleCalculator
 
 class SimpleCalculator(unittest.TestCase):
 
